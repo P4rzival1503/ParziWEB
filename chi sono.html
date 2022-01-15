@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, Initial-scale=1">
+    <title>ParziWEB - Chi Sono</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bottone extra.css">
+  </head>
+  <body>
+    <header class="header clearfix">
+      <a href="index.html" class="header__logo"><font face="arial">Luca Cassano</font></a>
+        <a href="" class="header__icon__bar"> icona
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      <ul class="header__menu animate">
+        <li class="header__menu__item"><a href="index.html"><font face="arial">Home Page</font></a></li>
+        <li class="header__menu__item"><a href="chi sono.html"><font face="arial">Chi Sono</font></a></li>
+        <li class="header__menu__item"><a href="preferito.html"><font face="arial">Le Mie Cose Preferite</font></a></li>
+        <li class="header__menu__item"><a href="hobby.html"><font face="arial">Hobby</font></a></li>
+      </ul>
+    </header>
+    <section class="cover">
+      <div class="cover__caption__filter">
+        <div class="cover__caption">
+          <div class="cover__caption__copy">
+            <h1><font face="arial">Chi sono!</font></h1>
+            <h2><font face="arial">Qui troverai tutte le informazioni necessarie per conoscermi!</font></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h1 align="center"><font face="arial" color="#245100">Luca Cassano</font></h1>
+    <table>
+      <tr>
+        <td>
+          <h2>
+            <font face="calibri">Sono un quattordicienne che vive a Bari, frequento l'istituto Marconi Hack e ho il sogno di diventare un programmatore di alto livello, nella mia vita ho realizzato diversi assets che riguardavano un gioco in particolare, ovvero Minecraft, per il resto, ho una ragazza, un gruppo di aspiranti programmatori e un computer pieno di diverse possibilità.</font>
+          </h2>
+        </td>
+        <td>
+          <img src="mh.png" alt="io" width="50%">
+        </td>
+      </tr>
+    </table>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script>
+      $(documento).ready(fenction){
+      $(".header__icon__bar").click(function(e)){
+      $(".header_menu").toggleClass("is-open");
+        e.preventDefault();}});
+    </script>
+  </body>
+</html>

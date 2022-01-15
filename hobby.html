@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, Initial-scale=1">
+    <title>ParziWEB - Hobby</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bottone extra.css">
+  </head>
+  <body>
+    <header class="header clearfix">
+      <a href="index.html" class="header__logo"><font face="arial">Luca Cassano</font></a>
+        <a href="" class="header__icon__bar"> icona
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      <ul class="header__menu animate">
+        <li class="header__menu__item"><a href="index.html"><font face="arial">Home Page</font></a></li>
+        <li class="header__menu__item"><a href="chi sono.html"><font face="arial">Chi Sono</font></a></li>
+        <li class="header__menu__item"><a href="preferito.html"><font face="arial">Le Mie Cose Preferite</font></a></li>
+        <li class="header__menu__item"><a href="hobby.html"><font face="arial">Hobby</font></a></li>
+      </ul>
+    </header>
+    <section class="cover">
+      <div class="cover__caption__filter">
+        <div class="cover__caption">
+          <div class="cover__caption__copy">
+            <h1><font face="arial">Hobby</font></h1>
+            <h2><font face="arial">benvenuto nella mia pagina dedicata hai miei hobby!</font></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cards clearfix">
+     <div class="card2">
+      <iframe width="360" height="160" src="https://www.youtube.com/embed/yZ1qB5hBb74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card__copy" align="center">
+          <h3><font face="arial"> Questo è un piccolo mio gameplay su un gioco di nome <a href="https://store.steampowered.com/app/531510/Just_Shapes__Beats/">Just Sharpe & Beats!</a> </font></h3>
+        </div>
+      </div>
+      <div class="card2">
+        <iframe width="360" height="160" src="https://www.youtube.com/embed/RObPQgzV3lk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <div class="card__copy" align="center">
+           <h3><font face="arial">Questo è un'altro gameplay su un gioco di nome <a href="https://osu.ppy.sh/home">OSU!</a></font></h3>
+         </div>
+       </div> 
+       <div class="card2">
+        <iframe width="360" height="160" src="https://www.youtube.com/embed/Uvb9AgFtQAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <div class="card__copy" align="center">
+           <h3><font face="arial">Questo è un video di uno youtuber che seguo, che gioca a <a href="https://www.subnautica.com/">Subnautica</a></font></h3>
+         </div>
+       </div> 
+    </section>
+    <section class="cards clearfix">
+      <div class="card1">
+        <a href="https://www.curseforge.com/minecraft/texture-packs/open-gaming-pack"><img src="ph.png" alt="assets di minecraft" width="360px" height="200px"></a>
+         <div class="card__copy" align="center">
+           <h3><font face="arial">questa immagine è una piccola parte di un mio lavoretto giornaliero, ovvero la realizzazione di una resource pack di minecraft e ne vado molto fiero del suo successo.</font></h3>
+           <h3><font face="arial">Clicca sull'immagine per visualizzare il sito della Resource Pack!</font></h3>
+         </div>
+       </div> 
+       <div class="card2">
+        <iframe width="360" height="160" src="https://www.youtube.com/embed/St60EGDvd5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <div class="card__copy" align="center">
+           <h3><font face="arial">Questo video è sempre dello stesso youtuber che seguo ma qui a differenza di subnautica, porta <a href="https://store.steampowered.com/app/1088850/Marvels_Guardians_of_the_Galaxy/">I Guardiani Della Galassia</a></font></h3>
+         </div>
+       </div> 
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(documento).ready(function(){
+        $("header__icon__bar").click(function(e){
+          $("header_menu").toggleClass("is-open");
+            e.preventDefault();})}
+    </script>
+  </body>
+</html>

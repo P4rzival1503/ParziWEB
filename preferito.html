@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, Initial-scale=1">
+    <title>ParziWEB - Preferiti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bottone extra.css">
+  </head>
+  <body>
+    <header class="header clearfix">
+      <a href="index.html" class="header__logo"><font face="arial">Luca Cassano</font></a>
+        <a href="" class="header__icon__bar"> icona
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      <ul class="header__menu animate">
+        <li class="header__menu__item"><a href="index.html"><font face="arial">Home Page</font></a></li>
+        <li class="header__menu__item"><a href="chi sono.html"><font face="arial">Chi Sono</font></a></li>
+        <li class="header__menu__item"><a href="preferito.html"><font face="arial">Le Mie Cose Preferite</font></a></li>
+        <li class="header__menu__item"><a href="hobby.html"><font face="arial">Hobby</font></a></li>
+      </ul>
+    </header>
+    <section class="cover">
+      <div class="cover__caption__filter">
+        <div class="cover__caption">
+          <div class="cover__caption__copy">
+            <h1><font face="arial">Le mie cose preferite</font></h1>
+            <h2><font face="arial">Questo elenco contiene tutti i siti che visito tipicamente!</font></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h2><font face="calibri">
+    <ul align="center" style="list-style-type:disc">
+      <li> Ascoltare la musica su <a href="https://open.spotify.com/playlist/5RNBAb5xKOAaOhEersiKwS?si=f1cb3799d00e488d">Spotify</a></li>
+      <li> Giocare a <a href="https://www.minecraft.net/it-it">minecraft</a></li>
+      <li> Vedere le mie <a href="https://www.mediasetplay.mediaset.it/video/cadutalibera/venerdi-22-ottobre_F311204701004601">serie tv</a> preferite</li>
+      <li> Andare al <a href="https://www.ucicinemas.it/film/2021/venom-la-furia-di-carnage/?cid=49">cinema</a> con gli amici</li>
+      <li> Giocare ad <a href="https://osu.ppy.sh/users/23372940">osu!</a></li>
+      <li> Guardare <a href="https://www.youtube.com/channel/UCNXR5tzJZmwPT6lKFjmBDIQ">Youtube</a></li>
+      <li> Utilizzare <a href="https://www.blender.org/">Blender</a> per creare modelli tridimensionali.</li>
+      <li> Sviluppare la mia <a href="https://www.curseforge.com/minecraft/texture-packs/open-gaming-pack">Resource Pack</a></li>
+    </font></h2></ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(documento).ready(function(){
+        $("header__icon__bar").click(function(e){
+          $("header_menu").toggleClass("is-open");
+            e.preventDefault();})}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, Initial-scale=1">
+    <title>ParziWEB - Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bottone extra.css">
+  </head>
+  <body>
+    <header class="header clearfix">
+      <a href="index.html" class="header__logo"><font face="arial">Luca Cassano</font></a>
+        <a href="" class="header__icon__bar"> icona
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      <ul class="header__menu animate">
+        <li class="header__menu__item"><a href="index.html"><font face="arial">Home Page</font></a></li>
+        <li class="header__menu__item"><a href="chi sono.html"><font face="arial">Chi Sono</font></a></li>
+        <li class="header__menu__item"><a href="preferito.html"><font face="arial">Le Mie Cose Preferite</font></a></li>
+        <li class="header__menu__item"><a href="hobby.html"><font face="arial">Hobby</font></a></li>
+      </ul>
+    </header>
+    <section class="cover">
+      <div class="cover__caption__filter">
+        <div class="cover__caption">
+          <div class="cover__caption__copy">
+            <h1><font face="arial">Luca Cassano</font></h1>
+            <h2><font face="arial">Sono un ragazzo di bari a cui piace l'informatica. Clicca sul pulsante "chi sono" per scoprire di più!</font></h2>
+            <a href="chi sono.html" class="button"><font face="arial">Chi Sono!</font></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards clearfix">
+     <div class="card2">
+      <embed class="card__image" src="jsb.mp4" width="400px" height="160px">
+        <div class="card__copy" align="center">
+          <h3><font face="arial"> i miei hobby per scoprire i miei interessi </font></h3>
+          <a href="hobby.html">
+          <button class="glow-on-hover" type="button"><font face="arial">I miei Hobby</font></button>
+          </a>
+        </div>
+      </div> 
+       <div class="card1">
+        <img class="card__image" src="Caduta Libera.png" width="400px" height="160px">
+         <div class="card__copy" align="center">
+           <h3><font face="arial">Cerca e conosci tutto quello che preferisco</font></h3>
+           <a href="preferito.html">
+           <button class="glow-on-hover" type="button"><font face="arial">Preferito!</font></button>
+           </a>
+         </div>
+       </div> 
+      </div> 
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(documento).ready(function(){
+        $("header__icon__bar").click(function(e){
+          $("header_menu").toggleClass("is-open");
+            e.preventDefault();})}
+    </script>
+  </body>
+</html>
